@@ -5,4 +5,4 @@ from .models import Pet
 
 @admin.register(Pet) # Decorator
 class PetAdmin(admin.ModelAdmin):
-    pass # Makes this a valid class.
+    list_display = ['name', 'species', 'breed', 'age', 'sex']
